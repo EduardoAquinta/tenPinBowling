@@ -33,4 +33,12 @@ describe("Unit tests for the ten pin bowling Kata", () => {
         let frames = "X 45";
         expect(bowlingScore(frames)).toBe(29);
     })
+    it("returns 23 if the input is '1/ 45", () => {
+        let frames = "1/ 45";
+        expect(bowlingScore(frames)).toBe(23);
+    })
+    it.only("returns 39 if the input is 'X X 45", () => {
+        let frames = "X X 45";
+        expect(bowlingScore(frames)).toBe(39);
+    })
 })
