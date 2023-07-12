@@ -6,7 +6,7 @@ function bowlingScore(frames) {
     if(frames === "X X X X X X X X X XXX"){
         total += 300;
     }
-
+    
 
 
         return total;
